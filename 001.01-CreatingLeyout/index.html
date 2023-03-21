@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Web Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-FsOZ7+dPlmAtmu46s3QEl8OdaJ0y/6oOY6dN0CFHl1ljJZ9XKgPjrUcunfN/QyG+WpkeIuo+PucB/szD8fZ5xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			background-color: #2D4D78;
+		}
+
+		.container {
+			display: grid;
+			grid-template-columns: 300px auto;
+			grid-template-rows: 50px auto 300px;
+			grid-template-areas: 
+				"sidebar topbar"
+				"sidebar main"
+				"footer footer";
+			height: 100vh;
+		}
+
+    .sidebar {
+      grid-area: sidebar;
+      background-color: #5C6B80;
+      color: white;
+      box-sizing: border-box;
+      height: 100vh;
+    }
+
+		.topbar {
+			grid-area: topbar;
+			background-color: #1E2D4F;
+			color: white;
+			box-sizing: border-box;
+			height: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+		}
+
+		.main {
+			grid-area: main;
+			background-color: #F0F0F0;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+
+		.footer {
+			grid-area: footer;
+			background-color: #E0E0E0;
+			padding: 20px;
+			box-sizing: border-box;
+			height: 300px;
+		}
+
+		h2 {
+			color: #1E2D4F;
+			width: 100%;
+      margin: 0px;
+      margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="sidebar">
+      Sidebar
+		</div>
+		<div class="topbar">
+      Topbar
+		</div>
+		<div class="main">
+			<h2>Main Title</h2>
+			Main Section
+		</div>
+		<div class="footer">
+			Footer
+		</div>
+	</div>
+</body>
+</html>
